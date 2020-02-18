@@ -1,0 +1,16 @@
+.photo-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .spinner {
+        height: 20vw;
+        margin: 10px;
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 20vw;
+        align-items: center;
+        justify-content: center;
+    }
+}

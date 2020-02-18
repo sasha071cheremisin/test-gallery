@@ -1,0 +1,41 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    &__link {
+        padding: 5px 10px;
+        border: none;
+        background-color: darkgray;
+        cursor: pointer;
+        position: relative;
+        height: 30px;
+        outline: none;
+
+        &--back {
+            margin-left: 20px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: -35px;
+                bottom: 0px;
+                border: 15px solid transparent;
+                border-right: 20px solid darkgray;
+            }
+        }
+        
+        &--forward {
+            margin-right: 20px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                right: -35px;
+                bottom: 0px;
+                border: 15px solid transparent;
+                border-left: 20px solid darkgray;
+            }
+        }
+    }
+}
